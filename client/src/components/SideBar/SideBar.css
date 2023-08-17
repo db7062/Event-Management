@@ -1,0 +1,57 @@
+@import "../../global.css";
+
+.sidebar {
+  width: 280px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--dark-card-color);
+}
+.sidebar .top .logo {
+  margin-top: 20px;
+}
+
+.sidebar .top .profile {
+  top: 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  justify-content: space-evenly;
+}
+
+.sidebar .profile h3 {
+  color: var(--light-dark);
+}
+
+.sidebar .role {
+  color: var(--light-dark);
+  display: flex;
+  justify-content: center;
+}
+
+.sidebar .logo {
+  display: flex;
+  justify-content: center;
+  color: var(--light-dark);
+}
+
+.sidebar .bottom .listings ul {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.sidebar .bottom .listings ul li {
+  list-style: none;
+}
+
+.sidebar .bottom .listings ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  color: var(--light-dark);
+}

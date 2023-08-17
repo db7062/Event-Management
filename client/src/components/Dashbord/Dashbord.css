@@ -1,0 +1,7 @@
+@import "../../global.css";
+
+.dashbord {
+  height: 100vh;
+  width: calc(100vw - 280px);
+  background-color: var(--base-back-color);
+}
