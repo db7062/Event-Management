@@ -1,7 +1,37 @@
 @import "../../global.css";
 
-.dashbord {
+/* Styles for the dashboard */
+.dashboard {
   height: 100vh;
   width: calc(100vw - 280px);
+  /* Add margin to the left and right sides */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: var(--base-back-color);
+}
+
+/* Styles for the containers */
+.container {
+  margin: 0px 20px;
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Center both vertically and horizontally */
+  font-size: 18px;
+  color: white;
+}
+
+.container1 {
+  width: 60%;
+  background-color: var(
+    --black-card-color
+  ); /* Blue background color for container 1 */
+}
+
+.container2,
+.container3 {
+  width: 26%;
+  background-color: #e74c3c; /* Red background color for containers 2 and 3 */
 }
