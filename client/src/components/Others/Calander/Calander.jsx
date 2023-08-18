@@ -24,7 +24,12 @@ class Calendar extends React.Component {
       const updatedNotices = this.state.notices.filter(
         (item) => item !== notice
       );
-      this.setState({ notices: updatedNotices, popupNotice: null });
+      this.setState({
+        notices: updatedNotices,
+        popupNotice: null,
+      });
+      this.props.onApprove(notice.date); // Call the onApprove function from props
+      console.log(`Approved date: ${notice.date.toDateString()}`);
     }
   };
 
@@ -34,6 +39,7 @@ class Calendar extends React.Component {
         (item) => item !== notice
       );
       this.setState({ notices: updatedNotices, popupNotice: null });
+      console.log(`Declined date: ${notice.date.toDateString()}`);
     }
   };
 

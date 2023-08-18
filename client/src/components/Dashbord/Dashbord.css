@@ -33,5 +33,31 @@
 .container2,
 .container3 {
   width: 26%;
-  background-color: #e74c3c; /* Red background color for containers 2 and 3 */
+  background-color: var(--black-card-color);
+}
+
+.container2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.upcoming-events {
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+.event {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.event:before {
+  content: "\2022"; /* Bullet point */
+  margin-right: 10px;
+  color: #007bff;
+  font-size: 12px;
 }
